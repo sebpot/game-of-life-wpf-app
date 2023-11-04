@@ -14,22 +14,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PlaNet_Projekt_1
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-            MainContent.Content = new StartView();
-        }
+namespace PlaNet_Projekt_1;
 
-        public void Navigate(UserControl navigateTo)
-        {
-            MainContent.Content = navigateTo;
-        }
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        MainContent.Content = new StartView();
+    }
+
+    public void Navigate(UserControl navigateTo)
+    {
+        MainContent.Content = navigateTo;
     }
 }

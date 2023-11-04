@@ -25,3 +25,5 @@ D:\vs_projects\PlaNet_Projekt_1\obj\Debug\net7.0-windows\views\GameView.g.cs
 D:\vs_projects\PlaNet_Projekt_1\obj\Debug\net7.0-windows\views\StartView.baml
 D:\vs_projects\PlaNet_Projekt_1\obj\Debug\net7.0-windows\views\CreateGameView.baml
 D:\vs_projects\PlaNet_Projekt_1\obj\Debug\net7.0-windows\views\GameView.baml
+D:\vs_projects\PlaNet_Projekt_1\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\vs_projects\PlaNet_Projekt_1\obj\Debug\net7.0-windows\PlaNet_Projekt_1.csproj.CopyComplete

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dThUxT9Tqf82CCMRrW78Ztx1eTIzYCa2UNMs+871oY9IvM4h5culjCFdo4IUyBzSu7lie81bVEKlUFoX2sBd1g==",
+  "dgSpecHash": "4mdCDtw0BfTKDtSvHtVEU5AAoOubuHW/GgkU/hK8VHgfaIjjt4zc5+wjO6BB6J74cbaohKJ7EuQ8t5Na2LrceA==",
   "success": true,
   "projectFilePath": "D:\\vs_projects\\PlaNet_Projekt_1\\PlaNet_Projekt_1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\poti5\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

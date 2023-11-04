@@ -14,25 +14,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PlaNet_Projekt_1.views
+namespace PlaNet_Projekt_1.views;
+
+/// <summary>
+/// Interaction logic for CreateGameView.xaml
+/// </summary>
+public partial class CreateGameView : UserControl
 {
-    /// <summary>
-    /// Interaction logic for CreateGameView.xaml
-    /// </summary>
-    public partial class CreateGameView : UserControl
+    public CreateGameView()
     {
-        public CreateGameView()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
-        private void CreateNewGame_Click(object sender, RoutedEventArgs e)
-        {
-            int width = int.Parse(widthBox.Text);
-            int height = int.Parse(heightBox.Text);
+    private void CreateNewGame_Click(object sender, RoutedEventArgs e)
+    {
+        int width = int.Parse(widthBox.Text);
+        int height = int.Parse(heightBox.Text);
 
-            MainWindow mainWindow = (MainWindow)Window.GetWindow(this);
-            mainWindow.Navigate(new GameView(new Board(width, height)));
-        }
+        MainWindow mainWindow = (MainWindow)Window.GetWindow(this);
+        mainWindow.Navigate(new GameView(new Board(width, height)));
     }
 }

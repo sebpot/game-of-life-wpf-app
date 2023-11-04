@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Height="450" Width="800">
     <Grid>
-        <Button Click="NewGame_Click" Content="New game" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" Height="50" Width="216" FontSize="20"/>
-        <Button Content="Load game" HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Height="50" Width="216" FontSize="20"/>
+        <Button Click="NewGameButton_Click" Content="New game" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" Height="50" Width="216" FontSize="20"/>
+        <Button Content="Load game" HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Height="50" Width="216" FontSize="20" Click="LoadGameButton_Click"/>
         <Button Click="ExitButton_Click" Content="Exit" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" Height="50" Width="216" FontSize="20"/>
         <Label Content="Game of life" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="76" Width="290" FontSize="48"/>
 
