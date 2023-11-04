@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PlaNet_Projekt_1/1.0.0": {
+        "runtime": {
+          "PlaNet_Projekt_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PlaNet_Projekt_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
