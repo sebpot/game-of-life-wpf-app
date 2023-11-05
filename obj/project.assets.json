@@ -61,9 +61,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\vs_projects\\PlaNet_Projekt_1\\PlaNet_Projekt_1.csproj",
-      "projectName": "PlaNet_Projekt_1",
-      "projectPath": "D:\\vs_projects\\PlaNet_Projekt_1\\PlaNet_Projekt_1.csproj",
+      "projectUniqueName": "D:\\vs_projects\\PlaNet_Projekt_1\\Game_of_Life.csproj",
+      "projectName": "Game_of_Life",
+      "projectPath": "D:\\vs_projects\\PlaNet_Projekt_1\\Game_of_Life.csproj",
       "packagesPath": "C:\\Users\\poti5\\.nuget\\packages\\",
       "outputPath": "D:\\vs_projects\\PlaNet_Projekt_1\\obj\\",
       "projectStyle": "PackageReference",

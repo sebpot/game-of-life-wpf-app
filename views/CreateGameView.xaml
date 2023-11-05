@@ -7,12 +7,33 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBox Name="widthBox" HorizontalAlignment="Left" Margin="406,210,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="140" Height="33" FontSize="22"/>
-        <Label Content="Width" HorizontalAlignment="Left" Margin="236,210,0,0" VerticalAlignment="Top" Height="48" Width="146" FontSize="22"/>
-        <TextBox Name="heightBox" HorizontalAlignment="Left" Margin="406,264,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="140" Height="33" FontSize="22"/>
-        <Label Content="Height" HorizontalAlignment="Left" Margin="236,263,0,0" VerticalAlignment="Top" Height="46" Width="146" FontSize="22"/>
+        <TextBox Name="widthBox" HorizontalAlignment="Left" Margin="336,210,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="140" Height="33" FontSize="22"/>
+        <Label Content="Width" HorizontalAlignment="Left" Margin="236,210,0,0" VerticalAlignment="Top" Height="48" Width="86" FontSize="22"/>
+        <TextBox Name="heightBox" HorizontalAlignment="Left" Margin="336,264,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="140" Height="33" FontSize="22"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="236,263,0,0" VerticalAlignment="Top" Height="46" Width="86" FontSize="22"/>
         <Label Content="Create new game" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Height="57" Width="328" FontSize="36"/>
         <Button Click="CreateNewGame_Click" Content="Create" HorizontalAlignment="Center" Margin="0,339,0,0" VerticalAlignment="Top" Height="53" Width="184" FontSize="22"/>
+        <ScrollViewer
+            Margin="426,-50,0,0"
+            VerticalScrollBarVisibility="Auto"
+            HorizontalAlignment="Center"
+            Width="250" Height="110">
+            <ListBox 
+                    x:Name="BoardTemplatesListBox"
+                    SelectedIndex="0" 
+                    ItemsSource="{Binding BoardTemplatesList}"
+                    HorizontalAlignment="Stretch">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock
+                                Text="{Binding}"
+                                Foreground="Black"
+                                Margin="6, 3"
+                                FontSize="14"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
 
     </Grid>
 </UserControl>

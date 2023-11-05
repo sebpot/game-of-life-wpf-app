@@ -59,7 +59,7 @@ namespace PlaNet_Projekt_1 {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/PlaNet_Projekt_1;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Game_of_Life;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

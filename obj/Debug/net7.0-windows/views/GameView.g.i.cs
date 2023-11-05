@@ -77,7 +77,7 @@ namespace PlaNet_Projekt_1.views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PlaNet_Projekt_1;component/views/gameview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Game_of_Life;component/views/gameview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\views\GameView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
