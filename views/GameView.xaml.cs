@@ -4,6 +4,7 @@ using PlaNet_Projekt_1.model.serialization;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -154,6 +155,27 @@ public partial class GameView : UserControl
             return;
 
         BoardSerializer.Serialize(Board, dialog.FileName);
+    }
+
+    private void ScreenshotButton_Click(object sender, RoutedEventArgs e)
+    {
+        var dialog = new SaveFileDialog();
+        dialog.Filter = "Game of life state image (.jpeg)|*.jpeg";
+        dialog.FileName = "GOL_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".jpeg";
+
+        if (dialog.ShowDialog() == false)
+            return;
+
+        RenderTargetBitmap bitmap = new RenderTargetBitmap((int)this.BoardGrid.ActualWidth, (int)this.BoardGrid.ActualHeight,
+                  96, 96, PixelFormats.Pbgra32);
+        bitmap.Render(this.BoardGrid);
+
+        using (FileStream stream = File.Create(dialog.FileName))
+        {
+            JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+            encoder.Frames.Add(BitmapFrame.Create(bitmap));
+            encoder.Save(stream);
+        }
     }
 
     private void ExitButton_Click(object sender, RoutedEventArgs e)

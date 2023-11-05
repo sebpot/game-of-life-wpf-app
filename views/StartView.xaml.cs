@@ -44,10 +44,8 @@ public partial class StartView : UserControl
             return;
         }
 
-        var fileName = System.IO.Path.GetFileName(dialog.FileName);
-
         MainWindow mainWindow = (MainWindow)Window.GetWindow(this);
-        mainWindow.Navigate(new GameView(BoardSerializer.Deserialize(fileName)));
+        mainWindow.Navigate(new GameView(BoardSerializer.Deserialize(dialog.FileName)));
     }
 
     private void ExitButton_Click(object sender, RoutedEventArgs e)

@@ -59,11 +59,12 @@
 
         <Grid Grid.Row="1" Margin="0,0,0,0" Grid.ColumnSpan="2">
             <Button Content="Save" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="SaveButton_Click"/>
-            <Label Content="Generation" HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Top" Width="105" FontSize="18"/>
-            <Button Content="Prev" HorizontalAlignment="Left" Margin="190,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="PrevGen_Click"/>
-            <Button Content="Next" HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="NextGen_Click"/>
-            <ToggleButton Content="Auto" HorizontalAlignment="Left" Margin="410,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Checked="AutoButton_Checked" Unchecked="AutoButton_Unchecked"/>
-            <Button Content="Exit" HorizontalAlignment="Left" Margin="570,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="ExitButton_Click"/>
+            <Button Content="Screenshot" HorizontalAlignment="Left" Margin="130,0,0,0" VerticalAlignment="Center" Height="38" Width="110" FontSize="16" Click="ScreenshotButton_Click"/>
+            <Label Content="Generation" HorizontalAlignment="Left" Margin="380,0,0,0" VerticalAlignment="Top" Width="121" FontSize="18"/>
+            <Button Content="Prev" HorizontalAlignment="Left" Margin="280,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="PrevGen_Click"/>
+            <Button Content="Next" HorizontalAlignment="Left" Margin="390,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="NextGen_Click"/>
+            <ToggleButton Content="Auto" HorizontalAlignment="Left" Margin="500,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Checked="AutoButton_Checked" Unchecked="AutoButton_Unchecked"/>
+            <Button Content="Exit" HorizontalAlignment="Left" Margin="660,0,0,0" VerticalAlignment="Center" Height="38" Width="92" FontSize="16" Click="ExitButton_Click"/>
         </Grid>
     </Grid>
 </UserControl>

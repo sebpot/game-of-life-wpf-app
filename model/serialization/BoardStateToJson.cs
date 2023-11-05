@@ -32,10 +32,10 @@ public class BoardStateToJson
         Born = boardState.Born;
         Died = boardState.Died;
 
-        Cells = Cells2DArrayToString(boardState);
+        Cells = CellsToString(boardState);
     }
 
-    public static string Cells2DArrayToString(BoardState boardState)
+    public static string CellsToString(BoardState boardState)
     {
         var width = boardState.Width;
         var height = boardState.Height;
@@ -63,11 +63,11 @@ public class BoardStateToJson
         boardState.Generation = Generation;
         boardState.Born = Born;
         boardState.Died = Died;
-        boardState.Cells = CellsStringTo2DArray(Cells, width, height);
+        boardState.Cells = StringToCells(Cells, width, height);
         return boardState;
     }
 
-    public static bool[,] CellsStringTo2DArray(string cellsString, int width, int height)
+    public static bool[,] StringToCells(string cellsString, int width, int height)
     {
         bool[,] cells = new bool[width, height];
 
@@ -75,7 +75,7 @@ public class BoardStateToJson
 
         foreach (var cellString in cellStrings)
         {
-            if(cellString.Length == 3)
+            if(cellString.Length >= 3)
             {
                 string[] cords = cellString.Split('_');
                 cells[int.Parse(cords[0]), int.Parse(cords[1])] = true;
